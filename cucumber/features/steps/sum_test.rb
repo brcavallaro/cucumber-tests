@@ -1,9 +1,9 @@
 Given(/^I have (\d+) apples$/) do |arg1|
-  @cur_apples = int
+  @cur_apples = arg1
 end
 
 When(/^I buy (\d+) more apples$/) do |arg1|
-  @new_apples = int
+  @new_apples = arg1
 end
 
 Then(/^I have a total of (\d+) apples to eat$/) do |arg1|
